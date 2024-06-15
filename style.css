@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section--dashboard {
+  font-family: "Red Rose", serif;
+  line-height: 1;
+}
+
+.section--dashboard {
+  padding: 14rem 5rem;
+  /* background-image: url(paul-volkmer-unsplash.png); */
+  background: linear-gradient(
+      112deg,
+      rgba(104, 67, 151, 0.2) 3.52%,
+      rgba(134, 94, 255, 0.07) 20.56%,
+      rgba(133, 72, 232, 0.1) 25.57%,
+      rgba(133, 13, 204, 0.2) 99.83%,
+      rgba(139, 27, 205, 0.19) 126.34%,
+      rgba(217, 217, 217, 0) 136.42%
+    ),
+   url(./paul-volkmer-unsplash.png) lightgray 50% / cover no-repeat;
+    lightgray 50% / cover no-repeat;
+   
+}
+
+.container--dashboard {
+  max-width: 112rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  font-family: "Red Rose", serif;
+  color: #fff;
+}
+
+.team-outer-box--dashboard {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.team-info-box--dashboard {
+  width: 38rem;
+  height: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.2rem;
+  border-radius: 3rem;
+  background: rgba(134, 94, 255, 0.5);
+  font-size: 2rem;
+}
+
+.team-buttons-box--dashboard {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.button--dashboard {
+  font-size: 1.8rem;
+  color: #1a1826;
+  font-weight: 700;
+  background-color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.details-outer-box--dashboard {
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 3.2rem;
+  column-gap: 2rem; /* toggle for other view */
+  font-size: 3.4rem;
+}
+
+.label--dashboard {
+  justify-self: end; /*toggle for other view */
+}
+
+.text-field--dashboard {
+  border-bottom: 1px solid #fff;
+}
+
+.btn-change-password--dashboard {
+  margin-top: 2rem;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+/* Smaller Laptops 1070px*/
+@media (max-width: 67em) {
+  .section--dashboard {
+    padding: 14rem 3rem;
+  }
+  .team-info-box--dashboard {
+    font-size: 1.6rem;
+  }
+  .button--dashboard {
+    font-size: 1.4rem;
+  }
+  .details-outer-box--dashboard {
+    font-size: 2.8rem;
+  }
+  .team-info-box--dashboard {
+    width: 32rem;
+    height: 26rem;
+  }
+  .container--dashboard {
+    gap: 0;
+  }
+}
+
+/* Tablets 920px*/
+@media (max-width: 57.5em) {
+  .team-info-box--dashboard {
+    font-size: 1.4rem;
+  }
+  .button--dashboard {
+    font-size: 1.2rem;
+  }
+  .details-outer-box--dashboard {
+    font-size: 2.4rem;
+  }
+  .team-info-box--dashboard {
+    width: 24rem;
+    height: 20rem;
+  }
+}
+
+/* Smaller Tablets 780px*/
+@media (max-width: 57.5em) {
+  .container--dashboard {
+    flex-direction: column-reverse;
+    gap: 3.6rem;
+  }
+  .team-outer-box--dashboard {
+    gap: 2.4rem;
+  }
+  .btn-change-password--dashboard {
+    margin-top: -1rem;
+  }
+}
+
+/* Mobiles 480px*/
+@media (max-width: 30em) {
+  .section--dashboard {
+    padding: 14rem 1.2rem;
+  }
+  .team-info-box--dashboard {
+    font-size: 1.2rem;
+  }
+  .button--dashboard {
+    font-size: 1rem;
+  }
+  .details-outer-box--dashboard {
+    font-size: 2rem;
+  }
+  .details-outer-box--dashboard {
+    row-gap: 3.2rem;
+    column-gap: 1rem; /* toggle for other view */
+  }
+}
